@@ -19,8 +19,7 @@ return require('packer').startup(function()
       config = function()
         require('material')
       end,
-  } 
-
+  }
 
   -- icons
   use 'kyazdani42/nvim-web-devicons'
@@ -32,11 +31,9 @@ return require('packer').startup(function()
       'kyazdani42/nvim-web-devicons',
     },
     config = function()
-      require'nvim-tree'
+     require('nvim-tree')
     end,
   }
-
-
 
 end)
 
