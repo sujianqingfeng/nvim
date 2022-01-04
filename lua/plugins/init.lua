@@ -1,0 +1,6 @@
+require('plugins.nvim-packer')
+require('plugins.nvim-material')
+require('plugins.nvim-tree-file')
+require('plugins.nvim-which-key')
+require('plugins.nvim-bufferline')
+require('plugins.nvim-lualine')

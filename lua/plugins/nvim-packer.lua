@@ -9,31 +9,37 @@ if fn.empty(fn.glob(install_path)) > 0 then
 end
 
 
+
 return require('packer').startup(function()
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 
   -- theme 
-  use {
-    'marko-cerovac/material.nvim',
-      config = function()
-        require('material')
-      end,
-  }
+  use 'marko-cerovac/material.nvim'
+  
 
   -- icons
   use 'kyazdani42/nvim-web-devicons'
 
-  -- nvim-tree 
+  -- nvim-tree
   use {
     'kyazdani42/nvim-tree.lua',
     requires = {
       'kyazdani42/nvim-web-devicons',
     },
-    config = function()
-     require('nvim-tree')
-    end,
   }
+
+  -- using bufferline.nvim
+  use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
+
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  }
+
+  -- which key
+  use "folke/which-key.nvim"
+
 
 end)
 
