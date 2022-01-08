@@ -3,6 +3,7 @@ local default_opts = { noremap = true, silent = true }
 
 -- map kk to Esc
 map('i','kk','<Esc>',{noremap = true})
+map('i','jj','<Esc>',{noremap = true})
 
 map('v', '<', '<gv', default_opts)
 map('v', '>', '>gv', default_opts)
