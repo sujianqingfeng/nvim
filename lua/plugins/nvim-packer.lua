@@ -38,17 +38,20 @@ return require('packer').startup(function()
   }
 
   -- which key
-  use "folke/which-key.nvim"
+  use {'folke/which-key.nvim'}
 
-
+  -- gitsigns
   use {
-  'lewis6991/gitsigns.nvim',
-  requires = {
-    'nvim-lua/plenary.nvim'
-  },
-  -- tag = 'release' -- To use the latest release
-}
+    'lewis6991/gitsigns.nvim',
+    requires = {
+      'nvim-lua/plenary.nvim'
+    },
+    -- tag = 'release' -- To use the latest release
+  }
 
+
+  -- comment
+  use "terrortylor/nvim-comment"
 
 end)
 
