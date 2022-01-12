@@ -53,5 +53,8 @@ return require('packer').startup(function()
   -- comment
   use "terrortylor/nvim-comment"
 
+  -- toggle term
+  use {"akinsho/toggleterm.nvim"}
+
 end)
 
