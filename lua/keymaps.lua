@@ -27,3 +27,8 @@ map('n', '<C-n>', ':NvimTreeToggle<CR>', default_opts)
 -- buffer-line
 map("n", "<C-h>", ":BufferLineCyclePrev<CR>", default_opts)
 map("n", "<C-l>", ":BufferLineCycleNext<CR>", default_opts)
+
+
+-- place this in one of your configuration file(s)
+-- map('n', '<leader>f', "<cmd>lua require'hop'.hint_char1({ direction = require'hop.hint'.HintDirection.AFTER_CURSOR, current_line_only = true })<cr>", {})
+-- map('n', '<leader>F', "<cmd>lua require'hop'.hint_char1({ direction = require'hop.hint'.HintDirection.BEFORE_CURSOR, current_line_only = true })<cr>", {})

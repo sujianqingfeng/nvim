@@ -55,6 +55,17 @@ return require('packer').startup(function()
 
   -- toggle term
   use {"akinsho/toggleterm.nvim"}
+  
+
+  use {
+    'phaazon/hop.nvim',
+    branch = 'v1' -- optional but strongly recommended
+  }
+  
+  use {
+    "blackCauldron7/surround.nvim"
+  }
+
 
 end)
 

@@ -1,8 +1,5 @@
-require('plugins/material-config')
-require('plugins/tree-config')
-require('plugins/which-key-config')
-require('plugins/bufferline-config')
-require('plugins/lualine-config')
-require('plugins/gitsigns-config')
-require('plugins/comment-config')
-require('plugins/toggleterm-config')
+if(vim.g.vscode) then
+    require('plugins/vscode-config')
+else 
+    require('plugins/plugin-config')
+end
