@@ -1,3 +1,3 @@
-require('plugins/hop-config')
+require('plugins/lightspeed-config')
 require('plugins/surround-config')
 require('plugins/fcitx')

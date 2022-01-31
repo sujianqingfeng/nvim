@@ -1,10 +1,13 @@
 
-const a = 1
+const ab = 1
 
-const e= "feffffffaa"
+const b1= 'feffffffaa'
 
-const c = a + 1
+const cf = ab + 1
 
-const d = e + 'ff'
+const df = e + 'ff'
+
+const ab = j
 
 a.toFixed(a)
+

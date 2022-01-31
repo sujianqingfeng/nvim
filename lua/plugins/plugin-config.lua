@@ -6,4 +6,5 @@ require('plugins/lualine-config')
 require('plugins/gitsigns-config')
 require('plugins/comment-config')
 require('plugins/toggleterm-config')
-require('plugins/hop-config')
+
+require('plugins/lightspeed-config')

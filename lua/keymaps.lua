@@ -29,6 +29,8 @@ map("n", "<C-h>", ":BufferLineCyclePrev<CR>", default_opts)
 map("n", "<C-l>", ":BufferLineCycleNext<CR>", default_opts)
 
 
--- place this in one of your configuration file(s)
--- map('n', '<leader>f', "<cmd>lua require'hop'.hint_char1({ direction = require'hop.hint'.HintDirection.AFTER_CURSOR, current_line_only = true })<cr>", {})
--- map('n', '<leader>F', "<cmd>lua require'hop'.hint_char1({ direction = require'hop.hint'.HintDirection.BEFORE_CURSOR, current_line_only = true })<cr>", {})
+-- lightspeed
+-- map('n', '<leader>s', '<Plug>Lightspeed_s<CR>', default_opts)
+-- map('n', '<leader>S', '<Plug>Lightspeed_S', default_opts)
+-- map('n', '<leader>f', '<Plug>Lightspeed_f', default_opts)
+-- map('n', '<leader>F', '<Plug>Lightspeed_F', default_opts)
