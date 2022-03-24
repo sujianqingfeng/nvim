@@ -11,8 +11,12 @@ packer.startup({
     -- lualine (新增)
     use({ "nvim-lualine/lualine.nvim", requires = { "kyazdani42/nvim-web-devicons" } })
     use("arkav/lualine-lsp-progress")
-      -- telescope （新增）
+    -- telescope （新增）
     use { 'nvim-telescope/telescope.nvim', requires = { "nvim-lua/plenary.nvim" } }
+    -- dashboard-nvim (新增)
+    use("glepnir/dashboard-nvim")
+    -- project
+    use("ahmedkhalf/project.nvim")
   end,
   config = {
     -- 并发数限制
