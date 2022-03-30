@@ -204,7 +204,8 @@ pluginKeys.telescopeList = {
 
 -- nvim-tree
 -- alt + m 键打开关闭tree
-map("n", "<A-m>", ":NvimTreeToggle<CR>", opt)
+map("n", "<C-b>", ":NvimTreeToggle<CR>", opt)
+map("n","<C-S-e>",":NvimTreeFocus<CR>",opt)
 
 
 
