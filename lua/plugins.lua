@@ -3,7 +3,8 @@ packer.startup({
   function(use)
     use 'wbthomason/packer.nvim'
     -- tokyonight
-    use("folke/tokyonight.nvim")
+    -- use("folke/tokyonight.nvim")
+    use 'marko-cerovac/material.nvim'
     -- nvim-tree
     use({ "kyazdani42/nvim-tree.lua", requires = "kyazdani42/nvim-web-devicons" })
     -- bufferline
@@ -34,8 +35,6 @@ packer.startup({
     use("hrsh7th/cmp-path") -- { name = 'path' }
     use("hrsh7th/cmp-cmdline") -- { name = 'cmdline' }
 
-    -- 常见编程语言代码段
-    use("rafamadriz/friendly-snippets")
     -- ui (新增)
     use("onsails/lspkind-nvim")
     -- indent-blankline

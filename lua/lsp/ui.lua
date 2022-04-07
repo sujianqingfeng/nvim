@@ -74,7 +74,7 @@ lspkind.init({
     -- defines how annotations are shown
     -- default: symbol
     -- options: 'text', 'text_symbol', 'symbol_text', 'symbol'
-    mode = 'symbol_text',
+    mode = 'symbol',
     -- default symbol map
     -- can be either 'default' (requires nerd-fonts font) or
     -- 'codicons' for codicon preset (requires vscode-codicons font)
@@ -117,8 +117,8 @@ local M ={}
 -- 为 cmp.lua 提供参数格式
 M.formatting = {
     format = lspkind.cmp_format({
-      mode = 'symbol_text',
-      --mode = 'symbol', -- show only symbol annotations
+      --mode = 'symbol_text',
+      mode = 'symbol', -- show only symbol annotations
 
       maxwidth = 50, -- prevent the popup from showing more than provided characters (e.g 50 will not show more than 50 characters)
       -- The function below will be called before any actual modifications from lspkind

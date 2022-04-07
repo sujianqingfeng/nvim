@@ -36,7 +36,7 @@ null_ls.setup({
     -- formatting.black.with({ extra_args = { "--fast" } }),
   },
   -- 保存自动格式化
-  on_attach = function(_)
+  on_attach = function(client)
     if client.resolved_capabilities.document_formatting then
       vim.cmd("autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_sync()")
     end
