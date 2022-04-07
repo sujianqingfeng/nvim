@@ -36,6 +36,12 @@ packer.startup({
 
     -- 常见编程语言代码段
     use("rafamadriz/friendly-snippets")
+    -- ui (新增)
+    use("onsails/lspkind-nvim")
+    -- indent-blankline
+    use("lukas-reineke/indent-blankline.nvim")
+
+    use("tami5/lspsaga.nvim" ) -- 新增
   end,
   config = {
     -- 并发数限制
