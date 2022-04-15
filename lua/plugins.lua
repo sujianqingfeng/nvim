@@ -50,6 +50,9 @@ packer.startup({
 
 
     use({ "jose-elias-alvarez/nvim-lsp-ts-utils", requires = "nvim-lua/plenary.nvim" })
+
+
+    use {"akinsho/toggleterm.nvim"}
   end,
   config = {
     -- 并发数限制

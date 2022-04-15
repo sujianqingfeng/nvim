@@ -20,3 +20,5 @@ require("lsp.ui")
 require("plugin-config.indent-blankline")
 -- 格式化
 require("lsp.null-ls")
+
+require('plugin-config.toggle-term')
