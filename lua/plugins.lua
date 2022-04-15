@@ -44,14 +44,20 @@ packer.startup({
 
     -- 代码格式化
     use({ "jose-elias-alvarez/null-ls.nvim", requires = "nvim-lua/plenary.nvim" })
+
+    -- JSON 增强
+    use("b0o/schemastore.nvim")
+
+
+    use({ "jose-elias-alvarez/nvim-lsp-ts-utils", requires = "nvim-lua/plenary.nvim" })
   end,
   config = {
     -- 并发数限制
     max_jobs = 16,
     -- 自定义源
     git = {
-      default_url_format = "https://hub.fastgit.xyz/%s",
-      -- default_url_format = "https://mirror.ghproxy.com/https://github.com/%s",
+      -- default_url_format = "https://hub.fastgit.xyz/%s",
+      default_url_format = "https://mirror.ghproxy.com/https://github.com/%s",
       -- default_url_format = "https://gitcode.net/mirrors/%s",
       -- default_url_format = "https://gitclone.com/github.com/%s",
     },

@@ -130,6 +130,16 @@ end
 
 -- nvim-cmp 自动补全
 pluginKeys.cmp = function(cmp)
+
+    local feedkey = function(key, mode)
+      vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes(key, true, true, true), mode, true)
+    end
+
+    local has_words_before = function()
+      local line, col = unpack(vim.api.nvim_win_get_cursor(0))
+      return col ~= 0 and vim.api.nvim_buf_get_lines(0, line - 1, line, true)[1]:sub(col, col):match("%s") == nil
+    end
+
     return {
         -- 出现补全
         ["<A-.>"] = cmp.mapping(cmp.mapping.complete(), {"i", "c"}),
@@ -221,6 +231,13 @@ pluginKeys.telescopeList = {
 map("n", "<C-b>", ":NvimTreeToggle<CR>", opt)
 map("n","<C-S-e>",":NvimTreeFocus<CR>",opt)
 
+
+-- typescript 快捷键
+pluginKeys.mapTsLSP = function(mapbuf)
+  mapbuf("n", "gs", ":TSLspOrganize<CR>", opt)
+  mapbuf("n", "gr", ":TSLspRenameFile<CR>", opt)
+  mapbuf("n", "gi", ":TSLspImportAll<CR>", opt)
+end
 
 
 
