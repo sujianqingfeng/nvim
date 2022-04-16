@@ -62,7 +62,12 @@ packer.startup({
     use { "Pocco81/AutoSave.nvim" }
 
     -- 注释
-    use { "numToStr/Comment.nvim" }
+    use {
+      "numToStr/Comment.nvim",
+      requires = {
+        "JoosepAlviste/nvim-ts-context-commentstring"
+      },
+    }
 
 
   end,
