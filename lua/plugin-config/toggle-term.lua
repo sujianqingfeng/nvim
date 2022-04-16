@@ -1,6 +1,15 @@
+
+local status, bufferline = pcall(require, "toggleterm")
+if not status then
+    vim.notify("没有找到 toggleterm")
+  return
+end
+
+
+
 require("toggleterm").setup{
   -- size can be a number or function which is passed the current terminal
-  size = 10,
+  size = 7,
   hide_numbers = true, -- hide the number column in toggleterm buffers
   
   shade_terminals = true,

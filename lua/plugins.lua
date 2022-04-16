@@ -48,11 +48,16 @@ packer.startup({
     -- JSON 增强
     use("b0o/schemastore.nvim")
 
-
+    --ts
     use({ "jose-elias-alvarez/nvim-lsp-ts-utils", requires = "nvim-lua/plenary.nvim" })
 
+    -- 终端
+    use { "akinsho/toggleterm.nvim" }
 
-    use {"akinsho/toggleterm.nvim"}
+
+    -- 自动括号
+    use { "windwp/nvim-autopairs" }
+
   end,
   config = {
     -- 并发数限制
