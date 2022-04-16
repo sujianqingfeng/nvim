@@ -9,6 +9,10 @@ require("plugin-config.telescope")
 require("plugin-config.dashboard")
 require("plugin-config.project")
 require("plugin-config.nvim-treesitter")
+require('plugin-config.toggle-term')
+require('plugin-config.autopairs')
+require('plugin-config.autosave')
+
 
 -- 内置LSP
 require("lsp.setup")
@@ -20,5 +24,3 @@ require("plugin-config.indent-blankline")
 -- 格式化
 require("lsp.null-ls")
 
-require('plugin-config.toggle-term')
-require('plugin-config.autopairs')

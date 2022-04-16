@@ -58,6 +58,9 @@ packer.startup({
     -- 自动括号
     use { "windwp/nvim-autopairs" }
 
+    -- 自动保存
+    use { "Pocco81/AutoSave.nvim" }
+
   end,
   config = {
     -- 并发数限制
