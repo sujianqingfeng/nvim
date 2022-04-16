@@ -36,13 +36,13 @@ map("n", "s=", "<C-w>=", opt)
 
 
 -- Terminal相关
-map("n", "<leader>t", ":sp | terminal<CR>", opt)
-map("n", "<leader>vt", ":vsp | terminal<CR>", opt)
+-- map("n", "<leader>t", ":sp | terminal<CR>", opt)
+-- map("n", "<leader>vt", ":vsp | terminal<CR>", opt)
 map("t", "<Esc>", "<C-\\><C-n>", opt)
-map("t", "<C-h>", [[ <C-\><C-N><C-w>h ]], opt)
-map("t", "<C-j>", [[ <C-\><C-N><C-w>j ]], opt)
-map("t", "<C-k>", [[ <C-\><C-N><C-w>k ]], opt)
-map("t", "<C-l>", [[ <C-\><C-N><C-w>l ]], opt)
+-- map("t", "<C-h>", [[ <C-\><C-N><C-w>h ]], opt)
+-- map("t", "<C-j>", [[ <C-\><C-N><C-w>j ]], opt)
+-- map("t", "<C-k>", [[ <C-\><C-N><C-w>k ]], opt)
+-- map("t", "<C-l>", [[ <C-\><C-N><C-w>l ]], opt)
 
 
 
@@ -227,9 +227,8 @@ pluginKeys.telescopeList = {
 
 
 -- nvim-tree
--- alt + m 键打开关闭tree
 map("n", "<C-b>", ":NvimTreeToggle<CR>", opt)
-map("n","<C-S-e>",":NvimTreeFocus<CR>",opt)
+map("n","<leader>fc",":NvimTreeFindFile<CR>",opt)
 
 
 -- typescript 快捷键
