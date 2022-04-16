@@ -61,6 +61,10 @@ packer.startup({
     -- 自动保存
     use { "Pocco81/AutoSave.nvim" }
 
+    -- 注释
+    use { "numToStr/Comment.nvim" }
+
+
   end,
   config = {
     -- 并发数限制

@@ -12,6 +12,7 @@ require("plugin-config.nvim-treesitter")
 require('plugin-config.toggle-term')
 require('plugin-config.autopairs')
 require('plugin-config.autosave')
+require('plugin-config.comment')
 
 
 -- 内置LSP
