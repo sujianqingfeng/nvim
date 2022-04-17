@@ -1,5 +1,13 @@
+local status, material = pcall(require, "material")
+if not status then
+    vim.notify("没有找到 material")
+  return
+end
+
+
 vim.g.material_style = 'palenight'
-require('material').setup({
+
+material.setup({
 
 	contrast = {
 		sidebars = false, -- Enable contrast for sidebar-like windows ( for example Nvim-Tree )

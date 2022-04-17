@@ -11,9 +11,9 @@ require("plugin-config.project")
 require("plugin-config.nvim-treesitter")
 require('plugin-config.toggle-term')
 require('plugin-config.autopairs')
-require('plugin-config.autosave')
 require('plugin-config.comment')
-
+require("plugin-config.indent-blankline")
+require("plugin-config.gitsigns")
 
 -- 内置LSP
 require("lsp.setup")
@@ -21,7 +21,6 @@ require("lsp.cmp")
 require("lsp.ui")
 
 
-require("plugin-config.indent-blankline")
 -- 格式化
 require("lsp.null-ls")
 

@@ -13,6 +13,10 @@ treesitter.setup({
     enable = true,
     additional_vim_regex_highlighting = false,
   },
+  context_commentstring = {
+    enable = true,
+    enable_autocmd = false,
+  },
   -- 启用增量选择模块
   incremental_selection = {
     enable = true,
@@ -27,11 +31,6 @@ treesitter.setup({
       enable = true,
     },
   },
-
-  context_commentstring = {
-    enable = true,
-    enable_autocmd = false,
-  }
 })
 
 
