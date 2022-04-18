@@ -42,16 +42,24 @@ local floatTerm =Terminal:new(
     }
 )
 
+local lazygit = Terminal:new({ cmd = "lazygit", hidden = true, direction = "float",})
+
 
 -- 定义新的方法
-_float_toggle = function()
+function _float_toggle()
     floatTerm:toggle()
+end
+
+
+function _lazygit_toggle()
+  lazygit:toggle()
 end
 
 
 local opts = {noremap = true,silent = true}
 local map = vim.api.nvim_set_keymap
 map("n", "<leader>tf", "<cmd>lua _float_toggle()<CR>", opts)
+map("n", "<leader>tg", "<cmd>lua _lazygit_toggle()<CR>", opts)
 map("n", "<leader>t", "<cmd>exe v:count.'ToggleTerm'<CR>", opts)
 map("n", "<leader>ta", "<cmd>ToggleTermToggleAll<CR>", opts)
 map("n", "<C-`>", "<cmd>ToggleTermToggleAll<CR>", opts)

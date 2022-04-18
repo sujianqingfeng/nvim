@@ -100,6 +100,8 @@ packer.startup({
 
     use "folke/which-key.nvim"
 
+    use "ur4ltz/surround.nvim"
+
 
   end,
   config = {
