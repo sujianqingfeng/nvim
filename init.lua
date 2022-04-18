@@ -14,6 +14,7 @@ require('plugin-config.autopairs')
 require('plugin-config.comment')
 require("plugin-config.indent-blankline")
 require("plugin-config.gitsigns")
+require("plugin-config.which-key")
 
 -- 内置LSP
 require("lsp.setup")

@@ -98,6 +98,8 @@ packer.startup({
     -- git
     use 'lewis6991/gitsigns.nvim'
 
+    use "folke/which-key.nvim"
+
 
   end,
   config = {
