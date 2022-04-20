@@ -54,8 +54,11 @@ nvim_tree.setup({
     side = "left",
     -- 隐藏根目录
     hide_root_folder = false,
-    -- 打开第一个文件自动resize
-    auto_resize = true,
+    -- 不显示行数
+    number = false,
+    relativenumber = false,
+    -- 显示图标
+    signcolumn = "yes",
     -- 自定义列表中快捷键
     mappings = {
       custom_only = false,
@@ -79,11 +82,12 @@ nvim_tree.setup({
         { key = "s", action = "system_open" },
       },
     },
-    -- 不显示行数
-    number = false,
-    relativenumber = false,
-    -- 显示图标
-    signcolumn = "yes",
+  },
+  actions = {
+    open_file = {
+      resize_window = true,
+      quit_on_open = false,
+    }
   },
   -- npm install -g wsl-open
   -- https://github.com/4U6U57/wsl-open/
