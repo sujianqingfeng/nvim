@@ -25,11 +25,11 @@ local keymap =  function()
             c = cmp.mapping.close()
         }),
         -- 上一个
-        ["<C-k>"] = cmp.mapping.select_prev_item(),
-        ["<Up>"] = cmp.mapping.select_prev_item(),
+        ["<C-k>"] = cmp.mapping(cmp.mapping.select_prev_item(),{'i','c'}),
+        ["<Up>"] =cmp.mapping(cmp.mapping.select_prev_item(),{'i','c'}),
         -- 下一个
-        ["<C-j>"] = cmp.mapping.select_next_item(),
-        ["<Down>"] = cmp.mapping.select_next_item(),
+        ["<C-j>"] = cmp.mapping(cmp.mapping.select_next_item(),{'i','c'}),
+        ["<Down>"] = cmp.mapping(cmp.mapping.select_next_item(),{'i','c'}),
         -- 确认
         ["<CR>"] = cmp.mapping.confirm({
             select = true,

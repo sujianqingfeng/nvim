@@ -66,7 +66,9 @@ map("n", "q", ":q<CR>", opt)
 map("i", "<C-h>", "<ESC>I", opt)
 map("i", "<C-l>", "<ESC>A", opt)
 
-
+-- 操作模式下 选择到行首行尾
+map("o", "H", "^", opt)
+map("o", "L", "$", opt)
 
 
 
