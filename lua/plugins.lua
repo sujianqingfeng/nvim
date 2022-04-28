@@ -103,6 +103,10 @@ packer.startup({
     use "ur4ltz/surround.nvim"
 
 
+    -- session 
+    use 'rmagatti/auto-session'
+
+
   end,
   config = {
     -- 并发数限制

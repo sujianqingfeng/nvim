@@ -16,6 +16,7 @@ require("plugin-config.indent-blankline")
 require("plugin-config.gitsigns")
 require("plugin-config.which-key")
 require("plugin-config.surround")
+require("plugin-config.auto-session")
 
 -- 内置LSP
 require("lsp.setup")
