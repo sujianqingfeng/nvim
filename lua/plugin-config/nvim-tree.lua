@@ -72,7 +72,7 @@ nvim_tree.setup({
         { key = "i", action = "toggle_ignored" }, -- Ignore (node_modules)
         { key = ".", action = "toggle_dotfiles" }, -- Hide (dotfiles)
         -- 文件操作
-        { key = "<F5>", action = "refresh" },
+        { key = "R", action = "refresh" },
         { key = "a", action = "create" },
         { key = "d", action = "remove" },
         { key = "r", action = "rename" },
@@ -95,3 +95,8 @@ nvim_tree.setup({
     cmd = "wsl-open",
   },
 })
+
+
+require('nvim-tree.events').on_file_created(function (file)
+  vim.cmd('edit '..file.fname)
+end)
