@@ -70,6 +70,10 @@ map("i", "<C-l>", "<ESC>A", opt)
 map("o", "H", "^", opt)
 map("o", "L", "$", opt)
 
+-- neovide 有问题
+-- 命令模式下 ctrl v粘贴第一个
+-- map('c','<C-v>','<C-r>*',opt)
+
 
 
 -- 插件快捷键
@@ -79,6 +83,7 @@ local pluginKeys = {}
 -- 左右Tab切换
 map("n", "<A-h>", ":BufferLineCyclePrev<CR>", opt)
 map("n", "<A-l>", ":BufferLineCycleNext<CR>", opt)
+
 
 
 -- 关闭
